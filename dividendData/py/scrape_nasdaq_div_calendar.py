@@ -82,10 +82,8 @@ if __name__ == "__main__":
     now = datetime.datetime.now()
     wks_name = 'Dividend ' + now.strftime("%Y-%m-%d %H:%M")
 
-
     # Write to Google sheet
-    wks = d2g.upload(out_pd.sort_values(by='yield_pct', ascending=False).
-                     sort_values(by='ex_date'), 
+    wks = d2g.upload(out_pd.sort_values(by=['ex_date', 'yield_pct'], ascending=[True, False]),
                      gfile='/Dividend', wks_name=wks_name)
 
 
