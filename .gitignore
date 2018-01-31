@@ -1,0 +1,26 @@
+# R files
+.Rhistory
+
+# data files
+data/
+*.RData
+#*.csv
+*.txt
+#*.xlsx
+
+# log files
+*.log
+
+# Backups
+*~
+\#*\#
+\#
+
+# Python bytecode
+*.pyc
+
+# Python & iPython
+venv/
+.ipynb_checkpoints/
+spark-warehouse/
+metastore_db/
